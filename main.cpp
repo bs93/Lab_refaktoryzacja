@@ -34,7 +34,7 @@ unsigned long long sumOfPrimes(int limit)
 
 int main(int argc, char *argv[])
 {
-	cout << "Result: " << sumOfPrimes(2000000);
+	cout << "Sum of prime numbers below 2 000 000: " << sumOfPrimes(2000000);
 	getchar();
 	return 0;
 }
