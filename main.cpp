@@ -40,14 +40,14 @@ bool isPrime(int x)
 //  If the given number is less than 2 returns 0,else returns sum of the prime numbers
 unsigned long long sumOfPrimes(int limit)
 {
-    unsigned long long sum = 2;
+    	unsigned long long sum = 2;
     
-    if(limit < 2)
-    {
-        return 0;
-    }
+    	if(limit < 2)
+    	{
+        	return 0;
+    	}
     
-    for(int i = 3 ; i < limit ; i += 2)
+    	for(int i = 3 ; i < limit ; i += 2)
 	{
 		if(isPrime(i)) sum += i;
 	}
