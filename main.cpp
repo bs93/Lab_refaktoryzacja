@@ -10,8 +10,8 @@ bool isPrime(int x)
 		if(x%i == 0) return false;
 	}
 	
-	//To see which numbers are Prime uncomment the line below
-	//cout << x << "\n";
+	//To see which numbers are being added uncomment the line below
+	//cout << "Adding: " << x << "\n";
 	return true;
 }
 
