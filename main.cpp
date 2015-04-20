@@ -5,7 +5,7 @@ using namespace std;
 
 bool isPrime(int x)
 {
-	for(int i=3; i<x ; i+=2)
+	for(int i = 3; i < x ; i += 2)
 	{
 		if(x%i == 0) return false;
 	}
@@ -15,16 +15,26 @@ bool isPrime(int x)
 	return true;
 }
 
-int main(int argc, char *argv[])
+unsigned long long sumOfPrimes(int limit)
 {
-	unsigned long long sum = 2;
-	
-	for(int i=3 ; i<2000000 ; i+=2)
-	{
+    	unsigned long long sum = 2;
+    
+    	if(limit < 2)
+    	{
+        	return 0;
+    	}
+    
+    	for(int i = 3 ; i < limit ; i += 2)
+    	{
 		if(isPrime(i)) sum += i;
 	}
+	
+	return sum;
+}
 
-	cout << "Result: " << sum;
+int main(int argc, char *argv[])
+{
+	cout << "Result: " << sumOfPrimes(2000000);
 	getchar();
 	return 0;
 }
